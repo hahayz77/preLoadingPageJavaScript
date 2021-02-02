@@ -12,23 +12,18 @@ body{
 /* PRE LOADING  ---------- */
 
 #loading{
+    position: absolute;
     width: 100vw;
     height: 100vh;
+    z-index: 999999999;
     background-color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fadeOut 3s ease-in-out;
 
 }
 
-@keyframes fadeOut {
-    0% { opacity: 1;}
-    99% { opacity: 0.01;}
-    100% { opacity: 0;}
-}
-
-#loading img{
-    height: 60px;
+#loadingImg{
+    height: 50px;
     width: auto;
 }
